@@ -1,0 +1,55 @@
+<div class="page-content align-center">
+    <form id="form-cadastro-funcionario">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input value="João Carlos Silva" autocomplete="off" class="mdl-textfield__input" type="text" id="nome-funcionario" pattern="[A-Z,a-z,À-ú, ]*" readonly/>
+            <label class="mdl-textfield__label" for="nome-aluno">Nome completo</label>
+            <span class="mdl-textfield__error">Somente letras e espaços permitidos</span>
+        </div>
+        <br>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input value="00000000000" autocomplete="off" class="mdl-textfield__input" type="text" id="cpf-funcionario" pattern="^\d{3}\.\d{3}\.\d{3}-\d{2}$" readonly/>
+            <label class="mdl-textfield__label" for="cpf-funcionario">CPF</label>
+            <span class="mdl-textfield__error">Digite o CPF com pontos e traço</span>
+        </div>
+        <br>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input value="01/01/1980" autocomplete="off" class="mdl-textfield__input" type="text" pattern="^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$" id="nasci-funcionario" readonly/>
+            <label class="mdl-textfield__label" for="nasci-funcionario">Data de nascimento</label>
+            <span class="mdl-textfield__error">Digite a data no formato DD/MM/YYYY</span>
+        </div>
+        <br>        
+        <div id="funcoes">
+            <div class="div-form-center">
+	            <label>Função:</label><br>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="radio-admin">
+                    <input type="radio" id="radio-admin" class="mdl-radio__button" name="funcao" value="3" checked>
+                    <span class="mdl-radio__label">Administração</span>
+                </label><br>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="radio-limpeza">
+                    <input type="radio" id="radio-limpeza" class="mdl-radio__button" name="funcao" value="2">
+                    <span class="mdl-radio__label">Serviços Gerais</span>
+                </label><br>            
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="radio-professor">
+                    <input type="radio" id="radio-professor" class="mdl-radio__button" name="funcao" value="1">
+                    <span class="mdl-radio__label">Professor</span>
+                </label>
+            </div>        
+        </div>  
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input value="joao.silva@sage.com" autocomplete="off" class="mdl-textfield__input" type="text" pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" id="email-funcionario" readonly/>
+            <label class="mdl-textfield__label" for="email-funcionario">E-mail</label>
+        </div>
+        <br>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input value="Avenida Itamar Franco, 1403, São Mateus, Juiz de Fora" autocomplete="off" class="mdl-textfield__input" type="text" id="end-funcionario" readonly/>
+            <label class="mdl-textfield__label" for="end-funcionario">Endereço</label>
+        </div>
+        <br>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input value="(32)3232-3232" class="mdl-textfield__input" type="text" pattern="^\(?\d{2}\)?[\s-]?[\s9]?\d{4}-?\d{4}$" id="telefone-funcionario" readonly>
+            <label class="mdl-textfield__label" for="telefone-funcionario">Telefone</label>
+            <span class="mdl-textfield__error">Digite no formato (DD)XXXX-YYYY</span>
+        </div>
+        <br>  
+    </form>
+</div>

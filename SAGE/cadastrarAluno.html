@@ -1,0 +1,47 @@
+<div class="page-content align-center">
+    <form id="form-cadastro-aluno" action="#">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input autocomplete="off" class="mdl-textfield__input" type="text" id="nome-aluno" pattern="[A-Z,a-z,À-ú, ]*" />
+            <label class="mdl-textfield__label" for="nome-aluno">Nome completo do aluno</label>
+            <span class="mdl-textfield__error">Somente letras e espaços permitidos</span>
+        </div>
+        <br>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input autocomplete="off" class="mdl-textfield__input" type="text" id="nome-pai" pattern="[A-Z,a-z,À-ú, ]*" />
+            <label class="mdl-textfield__label" for="nome-pai">Nome completo do pai</label>
+            <span class="mdl-textfield__error">Somente letras e espaços permitidos</span>
+        </div>
+        <br>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input autocomplete="off" class="mdl-textfield__input" type="text" id="nome-mae" pattern="[A-Z,a-z,À-ú, ]*" />
+            <label class="mdl-textfield__label" for="nome-mae">Nome completo da mãe</label>
+            <span class="mdl-textfield__error">Somente letras e espaços permitidos</span>
+        </div>
+        <br>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input autocomplete="off" class="mdl-textfield__input" type="text" id="nasci-aluno" pattern="^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$"/>
+            <label class="mdl-textfield__label" for="nasci-aluno">Data de nascimento</label>
+            <span class="mdl-textfield__error">Digite a data no formato DD/MM/YYYY</span>
+        </div>
+        <br>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input autocomplete="off" class="mdl-textfield__input" type="text" id="endereco-aluno" />
+            <label class="mdl-textfield__label" for="endereco-aluno">Endereço</label>
+        </div>
+        <br>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" pattern="^\(?\d{2}\)?[\s-]?[\s9]?\d{4}-?\d{4}$" id="telefone-aluno" id="telefone-aluno" />
+            <label class="mdl-textfield__label" for="telefone-aluno">Telefone</label>
+            <span class="mdl-textfield__error">Digite no formato (DD)XXXX-YYYY</span>
+        </div>
+        <br>
+        <div class="center-button">
+            <button type="reset" class="mdl-button mdl-js-button mdl-button--raised btn-form">
+              Limpar tudo
+            </button>
+            <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored btn-form">
+              Cadastrar
+            </button>  
+        </div>    
+    </form>
+</div>

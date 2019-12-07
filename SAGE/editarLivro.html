@@ -1,0 +1,51 @@
+<div class="page-content align-center">
+    <form id="form-cadastro-livro" action="#">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input value="Sistemas Distribuídos" autocomplete="off" class="mdl-textfield__input" type="text" id="titulo"/>
+            <label class="mdl-textfield__label" for="titulo">Título</label>
+        </div>
+        <br>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input value="Princípios e Paradigmas" autocomplete="off" class="mdl-textfield__input" type="text" id="sub-titulo" />
+            <label class="mdl-textfield__label" for="sub-titulo">Sub Título</label>
+        </div>
+        <br>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input value="Andrew S Tanenbaum" autocomplete="off" class="mdl-textfield__input" type="text" id="autor" pattern="[A-Z,a-z,À-ú, ]*" />
+            <label class="mdl-textfield__label" for="autor">Autor</label>
+            <span class="mdl-textfield__error">Somente letras e espaços permitidos</span>
+        </div>
+        <br>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input value="02" autocomplete="off" class="mdl-textfield__input" type="text" id="edicao" pattern="[0-9]{2}" />
+            <label class="mdl-textfield__label" for="edicao">Edição</label>
+            <span class="mdl-textfield__error">Somente 4 números permitidos</span>
+        </div>
+        <br>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input value="2009" autocomplete="off" class="mdl-textfield__input" type="text" id="ano" pattern="[0-9]{4}" />
+            <label class="mdl-textfield__label" for="ano">Ano</label>
+            <span class="mdl-textfield__error">Somente 4 números permitidos</span>
+        </div>
+        <br>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input value="Pearson" autocomplete="off" class="mdl-textfield__input" type="text" id="editora" />
+            <label class="mdl-textfield__label" for="editora">Editora</label>
+        </div>
+        <br>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input value="Computação" class="mdl-textfield__input" type="text" pattern="[A-Z,a-z,À-ú, ]*" id="assunto"  />
+            <label class="mdl-textfield__label" for="assunto">Assunto</label>
+            <span class="mdl-textfield__error">Somente letras e espaçõs permitidos</span>
+        </div>
+        <br>
+        <div class="center-button">
+            <button type="reset" class="mdl-button mdl-js-button mdl-button--raised btn-form">
+              Desfazer tudo
+            </button>
+            <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored btn-form">
+              Salvar
+            </button>  
+        </div>
+</form>
+</div>

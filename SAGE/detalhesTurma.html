@@ -1,0 +1,38 @@
+<div class="page-content align-center">
+    <form id="form-cadastro-turma" action="#">
+    	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input value="Turma 3A" autocomplete="off" class="mdl-textfield__input" type="text" id="nome-turma" readonly/>
+            <label class="mdl-textfield__label" for="nome-turma">Nome da turma</label>
+        </div>
+        <br>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+	        <label>Tipo de turma</label>
+        	<div id="tipoTurma">				         
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="radio-tipoTurma-3">
+                    <input type="radio" id="radio-tipoTurma-3" class="mdl-radio__button" name="tipoTurma" value="3" checked>
+                    <span class="mdl-radio__label">3º Ano</span>
+                </label>
+            </div>
+        </div>
+        <br>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+	        <label>Disciplina</label>
+        	<div id="disciplina">				
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="radio-disciplina-2">
+                    <input type="radio" id="radio-disciplina-2" class="mdl-radio__button" name="disciplina" value="2" checked>
+                    <span class="mdl-checkbox__label">Biologia</span>
+                </label>
+            </div>
+        </div>
+        <br>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input value="Vitor Silva" autocomplete="off" class="mdl-textfield__input" type="text" id="professor-associado" pattern="[A-Z,a-z,À-ú, ]*" readonly/>
+            <label class="mdl-textfield__label" for="professor-associado">Professor associado</label>
+        </div>
+        <br>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input value="S302" autocomplete="off" class="mdl-textfield__input" type="text" id="sala-associada" pattern="[A-Z,a-z,À-ú, ]*" readonly/>
+            <label class="mdl-textfield__label" for="sala-associada">Sala associada</label>
+        </div>
+	</form>
+</div>

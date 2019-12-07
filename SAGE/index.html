@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Sistema de Apoio à Gestão Acadêmica</title>
+        
+        <link rel="stylesheet" href="css/material.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="css/sage.css">
+        
+        <script src="js/material.min.js"></script>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/sage.js"></script>
+        
+        <!--script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyBo4_n8DnyV40S276Se0IMDO71OoFMbR6c",
+            authDomain: "sage-ihc.firebaseapp.com",
+            databaseURL: "https://sage-ihc.firebaseio.com",
+            storageBucket: "sage-ihc.appspot.com",
+            messagingSenderId: "203494387354"
+          };
+          firebase.initializeApp(config);
+        </script-->
+    </head>
+    <body>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+    				<nav class="mdl-navigation">
+                        <button text="Voltar" class="mdl-button mdl-js-button mdl-button--mini-fab mdl-js-ripple-effect mdl-button--icon" onClick="loadPageContent(lastHtmlPage, lastHtmlPageTitle)">
+  						<i class="material-icons">reply</i>
+						</button>
+                    </nav>
+                    <span id="nome-pagina-atual" class="mdl-title-layout"></span>
+                    <div class="mdl-layout-spacer"></div>
+                    <nav class="mdl-navigation">
+                        <a class="mdl-navigation__link" href="">
+                            Sair
+                            <label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
+                                <i class="large material-icons">launch</i>
+                            </label>
+                        </a>
+                    </nav>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">SAGE</span>
+                <nav class="mdl-navigation" id="menu-sage">
+                	<div>
+                        <a class="mdl-navigation__link" href="">Funcionários</a>
+                        <div>
+                            <a class="mdl-navigation__link" href="cadastrarFuncionario.html">Cadastrar Funcionário</a>
+                            <a class="mdl-navigation__link" href="listarFuncionarios.html">Consultar Funcionários</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="mdl-navigation__link" href="">Alunos</a>
+                        <div>
+                            <a class="mdl-navigation__link" href="cadastrarAluno.html">Cadastrar Aluno</a>
+                            <a class="mdl-navigation__link" href="listarAlunos.html">Consultar Alunos</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="mdl-navigation__link" href="">Professores</a>
+                        <div>
+                        	<a class="mdl-navigation__link" href="turmasAssociadasProfessor.html">Consultar Turmas Associadas</a>
+                            <a class="mdl-navigation__link" href="cadastrarEvento.html">Cadastrar Eventos</a>
+                            <a class="mdl-navigation__link" href="listaEventos.html">Consultar Eventos</a>
+                       </div> 
+                    </div>
+                    <div>
+                        <a class="mdl-navigation__link" href="">Turmas</a>
+                        <div>
+                            <a class="mdl-navigation__link" href="cadastrarTurma.html">Cadastrar Turma</a>
+                            <a class="mdl-navigation__link" href="listarTurmas.html">Consultar Turmas</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="mdl-navigation__link" href="">Salas</a>
+                        <div>
+                            <a class="mdl-navigation__link" href="cadastrarSala.html">Cadastrar Salas</a>
+                            <a class="mdl-navigation__link" href="listarSalas.html">Consultar Salas</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="mdl-navigation__link" href="">Biblioteca</a>
+                        <div>
+                            <a class="mdl-navigation__link" href="cadastrarLivro.html">Cadastrar Livro</a>
+                            <a class="mdl-navigation__link" href="listarLivros.html">Consultar Acervo</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="mdl-navigation__link" href="">Material</a>
+                        <div>
+                            <a class="mdl-navigation__link" href="cadastrarMaterial.html">Cadastrar Material</a>
+                            <a class="mdl-navigation__link" href="listaMaterial.html">Consultar Materiais</a>
+                        </div>  
+                    </div>
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+                <div id="page-content" >
+                    <!-- Your content goes here -->
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

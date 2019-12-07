@@ -1,0 +1,28 @@
+<div class="page-content align-center">
+    <form id="form" action="#">
+    	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input value="Caderno capa dura 96 folhas" autocomplete="off" class="mdl-textfield__input" type="text" id="nome-material"/>
+            <label class="mdl-textfield__label" for="nome-sala">Nome do material</label>
+        </div>
+        <br>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <textarea class="mdl-textfield__input" type="text" id="description" rows= "5"/>
+            <label class="mdl-textfield__label" for="description">Descrição do material</label>
+        </div>
+        <br>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input value="42" class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="quant-item" />
+            <label class="mdl-textfield__label" for="quant-item">Quantidade de itens</label>
+            <span class="mdl-textfield__error">Somente digite números</span>
+        </div>
+        <br>
+        <div class="center-button">
+            <button type="reset" class="mdl-button mdl-js-button mdl-button--raised btn-form">
+              Desfazer tudo
+            </button>
+            <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored btn-form">
+              Salvar
+            </button>  
+        </div>
+</form>
+</div>

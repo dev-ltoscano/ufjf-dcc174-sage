@@ -1,0 +1,44 @@
+
+#menu-sage > div > div {
+    display: none;
+}
+
+#menu-sage > div > div > a {
+    padding-left: 25%;
+}
+
+.page-content 
+{
+	margin: 2%;
+    padding-left: 20%;
+	overflow: auto;
+	min-height: 80em;
+}
+
+.lista {
+    display: inline-block;
+}
+
+.nav-top-div
+{
+	text-align: left;
+}
+
+.align-center
+{
+	padding-left: 0;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.btn-form
+{
+	margin: 0.3em;
+}
+
+.div-form-center
+{
+	width: 20%;
+    margin: auto;
+    text-align: left;
+}

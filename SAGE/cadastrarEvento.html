@@ -1,0 +1,28 @@
+<div class="page-content align-center">
+    <form id="form" action="#">
+    	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input autocomplete="off" class="mdl-textfield__input" type="text" id="nome-evento"/>
+            <label class="mdl-textfield__label" for="nome-evento">Nome do evento</label>
+        </div>
+        <br>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <textarea class="mdl-textfield__input" type="text" id="description" rows= "5"/>
+            <label class="mdl-textfield__label" for="description">Descrição do evento</label>
+        </div>
+        <br>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input autocomplete="off" class="mdl-textfield__input" type="text" id="data-evento" pattern="^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$"/>
+            <label class="mdl-textfield__label" for="data-evento">Data do evento</label>
+            <span class="mdl-textfield__error">Digite a data no formato DD/MM/YYYY</span>
+        </div>
+        <br>
+        <div class="center-button">
+            <button type="reset" class="mdl-button mdl-js-button mdl-button--raised btn-form">
+              Limpar tudo
+            </button>
+            <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored btn-form">
+              Cadastrar
+            </button>  
+        </div>
+</form>
+</div>
